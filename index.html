@@ -1,0 +1,813 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+           <title>Pratik Nakrani</title>
+            
+           <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css" />
+           
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    
+           <link href="CSS/animate.css" rel="stylesheet" type="text/css" />
+           <link href="CSS/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		   <link href="JS/bootstrap.min.js" rel="stylesheet" type="text/css" />
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" language="javascript"></script>
+    
+           <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+           <script src="JS/wow.min.js" type="text/javascript"></script>
+          
+           <script type="text/javascript">
+                new WOW().init();
+           </script>
+
+           <style type="text/css">
+                #HeaderDiv a.navbar-brand
+	            {
+	                font-family:Monotype Corsiva;
+	                font-size:25px;    
+	                color:#ffffff;
+	            }
+
+	            #HeaderDiv .navbar-btn
+	            {
+	                background-color:#37474faf;
+	                width: 150px;
+	                height: 30px
+	                font-style:bold;
+	                color: #ffa726;
+
+
+	            }
+
+	            #HeaderDiv .navbar-btn:hover
+	            {
+	                background-color:#ffa7262f;
+	               
+
+
+	            }
+
+	            #navbarCollapse li b
+	            {
+	                color:#ffffff;
+	            }
+	            
+                .fullscreen_bg 
+                {
+                    position:relative;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    overflow:hidden;
+                   
+         
+                }
+
+                .fullscreen_bg_video 
+                {
+                    position:absolute;
+                    width: auto;
+                    height: auto;
+                    min-width: 100%;
+	                min-height: 100%;
+	                overflow: hidden;
+	                 z-index:-1;
+	            }
+	            
+	            #Home
+	            {
+	                height:auto;
+	                padding-bottom:40px;
+	                color:#fff;
+	                font-weight:bold
+	            }
+
+
+	            #HomeRow img
+	            {
+	            	border: 6px solid #bdbdbd;
+    				border-radius: 4px;
+	            	
+	            }
+	            
+	            #HomeRow
+	            {
+	                padding-top:7%;   
+	                padding-bottom: 15%;
+	            }
+	            
+	            #HomeRow a i.fa
+	            {
+	                color:#ffffff;
+	            }
+
+	            #HomeRow h1,h4
+	            {
+	            	margin-bottom: 3px;
+	            	font-family: Century Gothic;
+	            }
+	      
+	            #HomeRow div.col-lg-offset-3
+	            {
+	                background:#37474faf; 
+	                padding-top:20px;
+	                padding-bottom:20px;
+	                border-radius:5px;
+	                box-shadow:0px 0px 30px #424242;   
+	            }
+	            
+	            #TechnicalSummary
+	            {
+	                height:auto;
+	                
+	                color:#fff;
+	                background-attachment:fixed;
+	                background-image:url('Images/About_Image2.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                line-height:1.5;
+	            }
+	            #TechnicalSummaryRow
+	            {
+	            	height: auto;
+	                padding-top:7%;
+	                padding-bottom:18%;
+	                background:rgba(0,0,0,0.8);
+	            }
+	            #TechnicalSummary h1
+	            {
+	                font-family:Monotype Corsiva;
+	            }
+	            #TechnicalSummary li
+	            {
+	                font-family:Century Gothic;
+	            }
+
+	            #PersonalSummary
+	            {
+	                height:auto;
+	                
+	                color:#fff;
+	                background-attachment:fixed;
+	                background-image:url('Images/About_Image2.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                line-height:1.5;
+	            }
+	            #PersonalSummaryRow
+	            {
+	            	height: auto;
+	                padding-top:7%;
+	                padding-bottom:12%;
+	                background:rgba(0,0,0,0.8);
+	            }
+	            #PersonalSummary h1
+	            {
+	                font-family:Monotype Corsiva;
+	            }
+	            #PersonalSummary li
+	            {
+	                font-family:Century Gothic;
+	            }
+	            
+	            #Qualifications
+	            {
+	            	height: auto;
+	                background-attachment:fixed;
+	                background-image:url('Images/Qualifications_Image.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:22px;
+	  
+	                color:#000000;
+	            }
+	            #QualificationsRow h2
+	            {
+	                font-family:Monotype Corsiva;
+	            }
+	            #QualificationsRow
+	            {
+	            	height: auto;
+	                 background:rgba(0,0,0,0.8);
+	            }
+	            #QualificationsRow div.col-lg-offset-1
+	            {
+	            	margin-bottom: 10%;
+	            	margin-top: 10%;
+	                padding:10px;
+	                background-color:#DCDCDCcc;
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	               
+
+	            }
+	            #Qualifications table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Qualifications table tr td
+	            {
+	                padding-bottom:20px;
+	                font-family:Century Gothic;
+	                font-size: 20px;
+	                font-style: bold;
+	            }
+	            #Qualifications table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+	            
+	            #Skills
+	            {
+	            	height: auto;
+	                background-attachment:fixed;
+	                background-image:url('Images/Qualifications_Image.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:22px;
+	          
+	                color:#000000;
+	            }
+	            #SkillsRow
+	            {
+	            	height: auto;
+	                 background:rgba(0,0,0,0.8);
+	            }
+	            #SkillsRow div.col-lg-10
+	            {
+	            	margin-bottom: 10%;
+	            	margin-top: 10%;
+	                padding:10px;
+	                background-color:#DCDCDCcc;
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	               
+	            }
+	            #SkillsRow h2
+	            {
+	                font-family:Monotype Corsiva;
+	            }
+	            #Skills table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Skills table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Skills table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+
+	                   .massive-font
+                {
+                	font-size: 15px;
+		        }
+
+		        .progress-bar
+		        {
+		        	padding: 2px;
+		        	font-family:Century Gothic;
+		        }    
+	            
+	            #Noncollegiate
+	            {
+	            	height: auto;
+	                background-attachment:fixed;
+	                background-image:url('Images/Qualifications_Image.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	      
+	                color:#000000;
+	            }
+	            #NoncollegiateRow
+	            {
+	                 height: auto;
+	                 background:rgba(0,0,0,0.8);
+	            }
+	            #NoncollegiateRow div.col-lg-10
+	            {
+	           		margin-top: 10%;
+	           		margin-bottom: 10%;
+	                padding:10px;
+	                background-color:#DCDCDCcc;
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	               
+	            }
+	            #Noncollegiate table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Noncollegiate h2
+	            {
+	                font-family:Monotype Corsiva;
+	            }
+	            #Noncollegiate table tr td
+	            {
+	                padding-bottom:20px;
+	                font-family:Century Gothic;
+	                font-size: 20px;
+	                font-style: bold;
+	            }
+	            #Noncollegiate table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+	            
+	        
+	            #Portfolio
+	            {
+	                height: auto;
+	                background-attachment:fixed;
+	               
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                background-image:url('Images/Portfolio.jpg');	      
+	                color:#000000;
+	                
+	            }
+
+	            #PortfolioRow
+	            {
+	                height: auto;
+	                background: rgba(0,0,0,0.7);
+
+	            }  
+	           
+	            #PortfolioRow h1
+	            {
+	                color:#000000;
+	                font-family:Monotype Corsiva;
+	            }  
+	            #PortfolioRow h4
+	            {
+	                color:#000000;
+	                font-family:Century Gothic;
+	                font-size: 22px;
+	            }  
+
+	            
+	            #Portfolio div.col-lg-10
+	            {
+	                margin-top: 10%;
+	           		margin-bottom: 10%;
+	                padding:10px;
+	              	background: rgba(230,230,230,0.4);
+	                border-radius:8px;
+	                padding-bottom: 5%;
+	                padding-left: 2%;
+	                padding-right: 2%;
+
+	                
+	                
+	            }  
+
+	            #Portfolio div.image
+	            {
+	            	opacity: 1;
+	            }
+	            .ContainerImage
+	            {
+                    position: relative;
+                    width:100%;
+                }
+                #Project .image 
+                {
+                  display: block;
+                  width: 100%;
+                  height: 350px;
+                 
+                }
+
+                #Certificate .image 
+                {
+                  display: block;
+                  width: 100%;
+                  height: 150px;
+                 
+                }
+
+
+
+                .overlay 
+                {
+                  position: absolute;
+                  bottom: 100%;
+                  left: 0;
+                  right: 0;
+                  background:rgba(0,0,0,0.7);
+                  overflow: hidden;
+                  width: 100%;
+                  height:0;
+                  font-family:Century Gothic;
+	                font-size: 20px;
+	                font-style: bold;
+                  transition: .5s ease;
+                }
+                .ContainerImage:hover .overlay 
+                {
+                  bottom: 0;
+                  height: 100%;
+                }
+
+                #Project .text 
+                {
+                  color: white;
+                  font-size: 13px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  text-align: center;
+                }
+
+                #Project .w3-card-4
+                {
+                	background: rgba(230,230,230,0.7);
+                	font-family: Century Gothic;
+                	text-align: center;
+                	padding: 3px;
+                }
+                .text 
+                {
+                  color: white;
+                  font-size: 20px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  text-align: center;
+                }
+
+                
+	            @media(max-width:768px)
+	            {
+	                .fullscreen_bg_video 
+                    {
+                        left:-160%;
+                        width:260%;
+                    }
+                    #TechnicalSummary
+                    {
+                        height:auto;    
+                    }
+                }
+                @media(max-width:992px)
+                {
+                    #HomeRow
+	                {
+	                 padding-top:17%;    
+	                }    
+	                #TechnicalSummaryRow
+	                {
+	                 padding-top:17%;    
+	                }
+                }
+           </style>
+      </head>
+
+    <body>
+         <div>
+             <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top" style="z-index:1000;">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header" id="HeaderDiv">
+                       <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                       </button>
+                       <a href="#" class="navbar-brand">Nakrani Pratik</a>
+                       <a href="pratikresume.pdf" download><button class="btn navbar-btn" >Download Resume</button></a>
+                       
+                  </div>
+                  <div id="navbarCollapse" class="collapse navbar-collapse">
+                       <ul class="nav navbar-nav navbar-right" style="font-size:13px;padding-right:15px;">
+                           <li><a href="#Home"><b>Intro</b></a></li>
+		                   <li><a href="#TechnicalSummary"><b>Technical Summary</b></a></li>
+		                   <li><a href="#PersonalSummary"><b>Personal Summary</b></a></li>
+                           <li><a href="#Qualifications"><b>Qualifications</b></a></li>
+                           <li><a href="#Skills"><b>Skills</b></a></li>
+                           <li><a href="#Noncollegiate"><b>Noncollegiate</b></a></li>
+                           <li><a href="#Portfolio"><b>Portfolio</b></a></li>
+                       </ul>
+                 </div>
+            </nav>
+         </div>
+
+         <div id="Home" class="fullscreen_bg">
+              <video src="Video/myvideo.mp4"  autoplay loop class="fullscreen_bg_video"></video>
+              <div class="row" id="HomeRow">
+                   <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-lg-6 col-md-6 col-sm-8 wow bounceInDown " data-wow-duration="3s">
+
+                   		<div class="row">
+                   			
+                   			<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-5">
+                   				<center><img src="Images/pratik1.jpg" alt="Nakrani Pratik" /></center>
+                   			</div>
+                   			<div class="col-lg-5 col-md-6 col-sm-6" style="padding-top:10%">
+                   				<center><h1 style="color: #fff3e0">I'M <br>PRATIK NAKRANI.</h1></center>
+                        		<center><h4 style="color: #ffa726">ANDROID APPLICATION DEVELOPER.</h4></center>
+                   			</div>
+                   		</div>
+                        
+                        <hr />
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-5">
+                                 <center><i class="fa fa-2x fa-phone" style="color:#fff3e0"></i><h5 style="color: #fff3e0;font-family: Century Gothic">+91- 9898099211</h5></center>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-6">
+                                 <center><i class="fa fa-2x fa-envelope" style="color:#fff3e0"></i> <a href="mailto:pratiknakrani07@gmail.com"><h5 style="color:#fff3e0;font-family: Century Gothic">pratiknakrani07@gmail.com</h5></a></center>
+                            </div>
+                        </div><hr />
+                        <center><a href="https://www.facebook.com/pratik.nakrani.7" target="_blank"><i class="fa fa-2x fa-facebook-square" style="color:#fff3e0"></i></a> &nbsp;<a href="#" target="_blank"><i class="fa fa-2x fa-linkedin-square" style="color:#fff3e0"></i></a> &nbsp;<a href="https://www.instagram.com/pratiknakrani07/" target="_blank"><i class="fa fa-2x fa-instagram" style="color:#fff3e0"></i></a></center>
+                   </div>
+              </div>
+         </div>
+         
+         <div id="TechnicalSummary" class="container-fluid wow bounceIn" data-wow-duration="3s">
+              <div class="row" id="TechnicalSummaryRow">
+                   <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                        <center><h1><i class="fa fa-gears"></i> Technical Summary</h1><hr /></center>
+                        <ul>
+                            <li>Currently pursing Bachelor Degree in Information Technology Engineering from Atmiya Institute of Technology and Science – Gujarat Technological University</li>
+                            <li>Intermediate expertise in Android Application Development.</li>
+                            <li>Also In database used for Mobile application development SQLite DB and MySql DB. </li>
+                            <li>Also aware and working with JSON & XML data formats and their parsing method.</li>
+                            <li>Aware with MVC Architecture.</li>
+                            <li>In present,focus is on Hybrid Mobile app development using Ionic Framework.</li>
+                           
+                        </ul>
+                   </div>
+              </div>
+         </div>
+
+         <div id="PersonalSummary" class="container-fluid wow bounceIn" data-wow-duration="3s">
+              <div class="row" id="PersonalSummaryRow">
+                   <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                        <center><h1><i class="fa fa-gears"></i>Personal Summary</h1><hr /></center>
+                        <ul>
+                            <li>I have good potential to adjust myself in any programming language by learning its syntax and framework in short period of time.</li>
+                            <li>Consistently eager to learn latest frameworks.</li>
+                            <li>I am always eager to code for the new projects.</li>
+                            <li>I give my best performance to complete my task on time and always try to learn something new from my task.</li>
+                            <li>Result oriented, self driven, highly motivated, smart,ability to work for long hours without losing patience and enthusiasm and hungry to learn new technologies, methodologies, strategies and processes. </li>
+                            <li>Good Management skills and also have ability to lead a team.</li>
+                            
+                        </ul>
+                   </div>
+              </div>
+         </div>
+
+         <div id="Qualifications" class="container-fluid">
+              <div class="row" id="QualificationsRow">
+                   <div class="col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-10 col-md-10 col-sm-10 wow rotateInDownLeft"  data-wow-duration="3s">
+                        <center><br /><h2><i class="fa fa-object-group"></i> Education Qualification</h2><hr /></center>
+                        <table>
+                            <tr>
+                                <td>BE Pursuing from 2015</td>
+                                <td>B.E. in Information Technology<br /> from Atmiya Institute of Technology and Science <br /> Gujarat Technological University. <br /> CGPA - 8.60 and CPI - 8.58(upto sem 5).</td>
+                            </tr>
+                            <tr>
+                                <td>Year<br />2012 - 2014</td>
+                                <td>HSC<br />from Shree Swaminarayan Gurukul Vidhyalay English Medium School,<br /> G.S.E.B. board.<br /> with 60.08% marks.</td>
+                            </tr>
+                            <tr>
+                                <td>Year<br />2011 - 2012</td>
+                                <td>SSC<br /> from Shree Swaminarayan Gurukul Vidhyalay English Medium School, <br /> G.S.E.B. board.<br /> with 78.00% marks.</td>
+                            </tr>
+                        </table>
+                   </div>
+              </div>
+         </div>
+
+         <div id="Skills" class="container-fluid">
+              <div class="row" id="SkillsRow">
+                   <div class="col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-10 col-md-10 col-sm-10 wow rotateInDownRight" data-wow-duration="3s">
+                        <center><br /><h2><i class="fa fa-object-group"></i> Technical Skills</h2><hr /></center>
+
+                        <center><h4 style="font-size: 20px">Core Expertise</h4><hr></center>
+                        <div class="row">
+                        	<div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-6 col-sm-6">
+								 <div class="progress" style="height: 25px;">
+								    <div class="progress-bar massive-font" style="width:100%;height: 25px">Android</div>
+							    </div>
+                        	</div>
+                        	<div class="col-lg-5 col-md-6 col-sm-6">
+                        		<div class="progress" style="height: 25px;">
+								    <div class="progress-bar massive-font" style="width:100%;height: 25px">Core Java</div>
+							    </div>
+                        	</div>
+                        </div>
+                        <div class="row">
+                        	<div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-6 col-sm-6">
+                        		<div class="progress" style="height: 25px;">
+								    <div class="progress-bar massive-font" style="width:100%;height: 25px">C</div>
+							    </div>
+                        	</div>
+                        	 <div class="col-lg-5 col-md-6 col-sm-6">
+                        		<div class="progress" style="height: 25px;">
+								    <div class="progress-bar massive-font" style="width:100%;height: 25px">C++</div>
+							    </div>
+                        	</div>
+                        </div>
+
+                         <center><hr><h4 style="font-size: 20px">Other Skills</h4><hr></center>
+                         <div class="row">
+                        	<div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-6 col-sm-6">
+								 <div class="progress" style="height: 25px;">
+								    <div class="progress-bar massive-font" style="width:100%;height: 25px;">UI/UX Design for app</div>
+							    </div>
+                        	</div>
+                        	<div class="col-lg-5 col-md-6 col-sm-6">
+                        		<div class="progress" style="height: 25px;">
+								    <div class="progress-bar  massive-font" style="width:100%;height: 25px">PHP</div>
+							    </div>
+                        	</div>
+                        </div>
+                        <div class="row">
+                        	<div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-6 col-sm-6">
+								 <div class="progress" style="height: 25px;">
+								    <div class="progress-bar massive-font" style="width:100%;height: 25px">HTML</div>
+							    </div>
+                        	</div>
+                        	<div class="col-lg-5 col-md-6 col-sm-6">
+                        		<div class="progress" style="height: 25px;">
+								    <div class="progress-bar  massive-font" style="width:100%;height: 25px">Javascript</div>
+							    </div>
+                        	</div>
+                        </div>
+
+                        <div class="row">
+                        	<div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-6 col-sm-6">
+                        		<div class="progress" style="height: 25px;">
+								    <div class="progress-bar massive-font" style="width:100%;height: 25px">Bootstrap</div>
+							    </div>
+                        	</div>
+                        	<div class="col-lg-5 col-md-6 col-sm-6">
+                        		<div class="progress" style="height: 25px;">
+								    <div class="progress-bar massive-font" style="width:100%;height: 25px">Material Design</div>
+							    </div>
+                        	</div>
+                        </div>
+                       
+                       <center><hr><h4 style="font-size: 20px">Tools & Technologies</h4><hr></center>
+                         <div class="row">
+                        	<div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-6 col-sm-6">
+								 <div class="progress" style="height: 25px;">
+								    <div class="progress-bar massive-font" style="width:100%;height: 25px">Android Studio (Advanced)</div>
+							    </div>
+                        	</div>
+                        </div>
+
+                        <center><hr><h4 style="font-size: 20px">Databases</h4><hr></center>
+                         <div class="row">
+                        	<div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-6 col-sm-6">
+								 <div class="progress" style="height: 25px;">
+								    <div class="progress-bar  massive-font" style="width:100%;height: 25px">SQLite Db</div>
+							    </div>
+                        	</div>
+                        	<div class="col-lg-5 col-md-6 col-sm-6">
+                        		<div class="progress" style="height: 25px;">
+								    <div class="progress-bar  massive-font" style="width:100%;height: 25px">MySql Db</div>
+							    </div>
+                        	</div>
+                        </div>
+                        <center><hr><h4 style="font-size: 20px">Operating System</h4><hr></center>
+                         <div class="row">
+                        	<div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-6 col-sm-6">
+								 <div class="progress" style="height: 25px;">
+								    <div class="progress-bar massive-font" style="width:100%;height: 25px">Microsoft Windows</div>
+							    </div>
+                        	</div>
+                        	<div class="col-lg-5 col-md-6 col-sm-6">
+                        		<div class="progress" style="height: 25px;">
+								    <div class="progress-bar massive-font" style="width:100%;height: 25px">Mac OS X</div>
+							    </div>
+                        	</div>
+                        </div>
+                   </div>
+              </div>
+         </div>
+
+         <div id="Noncollegiate" class="container-fluid">
+              <div class="row" id="NoncollegiateRow">
+                   <div class="col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-10 col-md-10 col-sm-10 wow rotateInDownLeft" data-wow-duration="3s">
+                        <center><br /><h2><i class="fa fa-object-group"></i> Non Collegiate Activities</h2><hr /></center>
+                        <table>
+                            <tr>
+                                <td>Date<br>15 Sep 2017</td>
+                                <td>Dewang Mehta IT Award - Certificate for Excellence Top Ranker 2017.<br /> At Gujarat University Convention Center.</td>
+                            </tr>
+                            <tr>
+                                <td>Date<br> 27 Sep 2017</td>
+                                <td>Certificate for participation from SSIP(Student Startup Innovation Policy) for the project "HELPING HAND" by Education Department.<br /> At Mahatma Mandir,Gandhinagar.</td>
+                            </tr>
+                            <tr>
+                                <td>Date <br>29 Jan 2018</td>
+                                <td>Gold Medal in Engineering Fair by Indian Science and Engineering Fair(INSEF) on project "ANNAPURNA".<br /> At Atmiya Institute of Technology and Science.</td>
+                            </tr>
+                        </table>
+                   </div>
+              </div>
+         </div>
+
+         <div id="Portfolio" class="container-fluid wow bounceIn" data-wow-duration="3s">
+              <div class="row" id="PortfolioRow">
+
+              	
+              	<div class="col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-10 col-md-10 col-sm-10">
+              		
+              		<center><br /><h1><i class="fa fa-object-group"></i> My Portfolio</h1><hr /></center>
+
+	              	<div id="Project">
+	              			<center><h4 style="font-size: 20px">Projects</h4><hr></center>
+
+	              		<div class="row" style="margin-left: 7%">
+	              			<div class="col-lg-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-3 col-md-3 col-sm-4">
+	              				<div class="w3-card-4" style="width:100%,height:350px">
+	              					<div class="ContainerImage">
+	                           			 <img src="Images/annapurna.jpg" alt="Annapurna app" class="image" />
+	                            	<div class="overlay">
+	                                	 <div class="text" >Annapurna app provides Lunch and Dinner menu of any dinning hall in particular area of city.Through this app we can also search for any dinning hall address and location in any area of a city and many more functionality.This app is build on Client Server architecture</div> 
+	                           		 </div>
+	                        		</div>
+								 	<div class="w3-container w3-center" style="padding-bottom: 27px">
+							      		<p>Project 1 : Annapurna app</p>
+								    </div>
+								  </div>
+							</div>
+
+							<div class="col-lg-3 col-md-3 col-sm-4">
+	              				<div class="w3-card-4" style="width:100%,height:350px">
+	              					<div class="ContainerImage">
+	                           			 <img src="Images/annapurna_admin.jpg" alt="Annapurna Admin app" class="image" />
+	                            	<div class="overlay">
+	                                	 <div class="text" >In Annapurna Admin app Dinning hall owner can sign up,log in.Later on they can add and edit their menu,profile.It is also build on Client Server architecture</div>
+	                           		 </div>
+	                        		</div>
+								 	<div class="w3-container w3-center">
+							      		<p>Project 2 : Annapurna Admin app</p>
+								    </div>
+								  </div>
+							</div>
+	                       	 
+	       
+	                   </div>
+	              	</div>
+             
+             		<div id="Certificate">
+	             			<center><hr><h4 style="font-size: 20px">Certificates</h4><hr></center>
+
+	              		<div class="row">
+	              			<div class="col-lg-4 col-md-4 col-sm-4">
+	                       	 <div class="ContainerImage">
+	                            <img src="Images/dewangmehtaaward.jpg" alt="Dewang Mehta IT award for Excellence and Ranker 2017" class="image" />
+	                            <div class="overlay">
+	                                 <div class="text">Dewang Mehta IT award for Excellence and Ranker 2017</div>
+	                            </div>
+	                        	</div>
+	                   		</div>
+	                   		<div class="col-lg-4 col-md-4 col-sm-4">
+	                          <div class="ContainerImage">
+	                            <img src="Images/engineeringfair.jpg" alt="Engineering Fair by INSEF" class="image" />
+	                            <div class="overlay">
+	                                 <div class="text">Certificate of Engineering Fair by INSEF for project "Annapurna"</div>
+	                           </div>
+	                        </div>
+	                    	</div>
+	                    	<div class="col-lg-4 col-md-4 col-sm-4">
+	                          <div class="ContainerImage">
+	                            <img src="Images/ssip.jpg" alt="Certificate by Education Department for Project" class="image" />
+	                            <div class="overlay">
+	                                 <div class="text">Certificate by Education Department for Project "Helping Hand"</div>
+	                           </div>
+	                        </div>
+	                    	</div>
+
+	             		</div>              		
+                   </div>
+              		</div>
+
+              	</div>
+                   
+              </div>
+         </div>
+    </body>
+</html>
